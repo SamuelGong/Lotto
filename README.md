@@ -5,8 +5,8 @@
 -->
 
 <p align="center">
-    <a href="https://github.com/SamuelGong/lotto-doc"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
-    <a href="https://github.com/SamuelGonglotto-doc/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/lotto-doc?color=yellow" alt="License"></a>
+    <a href="https://github.com/SamuelGong/SecuRaffle"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+    <a href="https://github.com/SamuelGong/SecuRaffle/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/SecuRaffle?color=yellow" alt="License"></a>
     <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
 </p>
 
