@@ -14,11 +14,6 @@ Posted by [Zhifeng Jiang](http://home.cse.ust.hk/~zjiangaj/), *HKUST* on Tuesday
 Other authors include Peng Ye, *HKUST*; Shiqi He, *UMich*; Wei Wang, *HKUST*;
 Ruichuan Chen, *Nokia Bell Labs*; and Bo Li, *HKUST*.
 
-> This technical blog serves as a concise introduction to one of our recent
-> research projects. Please note that the detailed manuscript and
-> code for this project are currently concealed, subject to Nokia Bell Labs' intelligent
-> property protection policies.
-
 ## Enforcing Honest Majority in Centralized Settings
 
 Edge devices, such as smartphones and laptops, are becoming increasingly
@@ -131,8 +126,6 @@ emulate a cross-device scenario. Compared to insecure
 selection algorithms, Lotto **slightly increases the duration** of each
 training round by less than 10% while achieving **comparable or even better
 time-to-accuracy** performance.
-
-We will publicize more details following the IP protection period.
 
 ## Support
 
