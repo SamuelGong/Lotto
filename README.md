@@ -1,14 +1,16 @@
+<!--
 <p align="center">
-    <img src="asset/lotto.png" height=400>
+    <img src="asset/logo.png" height=400>
 </p>
+-->
 
 <p align="center">
-    <a href="https://github.com/SamuelGong/Lotto-doc"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
-    <a href="https://github.com/SamuelGong/Lotto-doc/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/Lotto-doc?color=yellow" alt="License"></a>
+    <a href="https://github.com/SamuelGong/lotto-doc"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+    <a href="https://github.com/SamuelGonglotto-doc/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/lotto-doc?color=yellow" alt="License"></a>
     <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
 </p>
 
-<h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning</h1>
+<h1 align="center">SecuRaffle: Secure Participant Selection for Federated Learning</h1>
 
 Posted by [Zhifeng Jiang](http://home.cse.ust.hk/~zjiangaj/), *HKUST* on Tuesday, October 31, 2023.
 Other authors include Peng Ye, *HKUST*; Shiqi He, *UMich*; Wei Wang, *HKUST*;
@@ -77,7 +79,7 @@ inputs from other clients.
 
 ## Approaching Secure Participant Selection with Verifiable Randomness
 
-In this project, we develop **Lotto**, a novel system that enables secure
+In this project, we develop **SecuRaffle**, a novel system that enables secure
 participant selection in FL for the first time. Our key insight is that while
 an honest majority may not exist among participants produced by the server,
 it should hold among the entire client population, given the **[prohibitive cost](https://ieeexplore.ieee.org/iel7/9833550/9833558/09833647.pdf?casa_token=dHE_kaMFEzAAAAAA:C0xM8MQ09sB9T2NAcPAo6QXe0-1DjxcCABEklZdsMLUbL-JbcqSiVxh3QPm-MRtBlnZc8OU)**
@@ -87,43 +89,43 @@ Therefore, by incorporating **verifiable randomness** to the selection process,
 we can prevent the adversarial server from selecting an arbitrary number of
 dishonest participants.
 
-Specifically, to achieve secure **random selection**, Lotto allows each client
+Specifically, to achieve secure **random selection**, SecuRaffle allows each client
 in the population to
 determine its participation in a training round by computing **[verifiable random functions](https://eprint.iacr.org/2004/310.pdf)**
 (VRFs) using its secret key and public
-inputs. Once a client decides to participate, Lotto collects the referred
+inputs. Once a client decides to participate, SecuRaffle collects the referred
 randomness, along with the associated VRF proof, for other participants to
 verify the generation of the randomness. This approach ensures that each
 client's participation is provably independent of, fair to, and unpredictable
 for other clients. Yet, an adversarial server may still exploit this process
 to grow the dishonest cohort, for example, by sending incorrect and/or a
 selected subset of messages.
-Lotto further mitigates such misconduct by enabling honest clients to
+SecuRaffle further mitigates such misconduct by enabling honest clients to
 **verify critical messages**.
-Lotto provides a **provable guarantee** that the compromised fraction of
+SecuRaffle provides a **provable guarantee** that the compromised fraction of
 selected participants remains minimum, thereby maintaining the security guarantees
 offered by secure aggregation and distributed DP.
 
-Lotto is also capable of securing more advanced
+SecuRaffle is also capable of securing more advanced
 algorithms, referred to as **informed selection**, which are widely used in FL
 to judiciously select the best-performing participants for optimal training
 efficiency, such as [Oort](https://www.usenix.org/system/files/osdi21-lai.pdf).
 Given that these algorithms rely on
 client-specific measurements (e.g., processing speed and data quality) that
-are difficult to verify, Lotto does not attempt to precisely follow their
+are difficult to verify, SecuRaffle does not attempt to precisely follow their
 selection logic. Instead, it **approximates them** by reducing an informed
 selection problem to a random one. To do so, it first allows the server
 to **refine the client pool** by excluding a small fraction of low-quality
-clients based on the specified measurements. Lotto then **performs secure
+clients based on the specified measurements. SecuRaffle then **performs secure
 random selection** from the refined pool. Although an adversarial server may still
 attempt to manipulate this process by excluding honest clients, the security
 of our random selection ensures that any advantage it gains is **provably
 small**.
 
-We have implemented Lotto as a library and evaluated its
+We have implemented SecuRaffle as a library and evaluated its
 performance with various FL tasks in a large EC2 cluster configured to
 emulate a cross-device scenario. Compared to insecure
-selection algorithms, Lotto **slightly increases the duration** of each
+selection algorithms, SecuRaffle **slightly increases the duration** of each
 training round by less than 10% while achieving **comparable or even better
 time-to-accuracy** performance.
 
