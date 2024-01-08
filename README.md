@@ -3,15 +3,15 @@
 </p>
 
 <p align="center">
-    <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/badge/arxiv-xxxx.xxxxx-silver" alt="Paper"></a>
+    <a href="https://arxiv.org/abs/2401.02880"><img src="https://img.shields.io/badge/arxiv-2401.02880-silver" alt="Paper"></a>
     <a href="https://github.com/SamuelGong/Lotto"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
     <a href="https://github.com/SamuelGong/Lotto/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/Lotto?color=yellow" alt="License"></a>
-    <img src="https://badges.toozhao.com/badges/01HD0PSS2V0P5C237GBFEG9ZVX/blue.svg" />
+    <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
 </p>
 
 <h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (arXiv 2023)</h1>
 
-This repository contains the evaluation artifacts of our [preprint](#) paper titled 
+This repository contains the evaluation artifacts of our [preprint](https://arxiv.org/pdf/2401.02880.pdf) paper titled 
 "Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning".
 
 [Zhifeng Jiang](http://home.cse.ust.hk/~zjiangaj/), [Peng Ye](pyeac@cse.ust.hk), [Shiqi He](https://tctower.github.io/), 
@@ -365,13 +365,13 @@ to obtain authorization.
 
 ## 8. Citation
 
-If you find this repository useful, please consider giving ⭐ and citing our paper (preprint available [here](https://arxiv.org/pdf/xxxx.xxxxx.pdf)):
+If you find this repository useful, please consider giving ⭐ and citing our paper (preprint available [here](https://arxiv.org/pdf/2401.02880.pdf)):
 
 ```bibtex
 @inproceedings{jiang2023secure,
   author={Jiang, Zhifeng and Ye, Peng and He, Shiqi and Wang, Wei and Ruichuan, Chen and Li, Bo},
   title={Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning},
-  year={2023},
-  booktitle={arXiv:xxxx.xxxxx},
+  year={2024},
+  booktitle={arXiv:2401.02880},
 }
 ```
