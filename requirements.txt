@@ -1,0 +1,16 @@
+numpy
+python-socketio
+aiohttp
+requests
+boto3
+pyyaml
+scipy
+cryptography
+pycryptodome
+redis
+torch~=1.11.0
+torchvision
+psutil
+networkx
+transformers
+paramiko
