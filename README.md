@@ -9,7 +9,7 @@
     <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
 </p>
 
-<h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (arXiv 2023)</h1>
+<h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (arXiv 2024)</h1>
 
 This repository contains the evaluation artifacts of our [preprint](https://arxiv.org/pdf/2401.02880.pdf) paper titled 
 "Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning".
