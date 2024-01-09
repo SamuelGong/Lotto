@@ -368,7 +368,7 @@ to obtain authorization.
 If you find this repository useful, please consider giving ⭐ and citing our paper (preprint available [here](https://arxiv.org/pdf/2401.02880.pdf)):
 
 ```bibtex
-@inproceedings{jiang2023secure,
+@inproceedings{jiang2024secure,
   author={Jiang, Zhifeng and Ye, Peng and He, Shiqi and Wang, Wei and Ruichuan, Chen and Li, Bo},
   title={Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning},
   year={2024},
