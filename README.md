@@ -9,10 +9,11 @@
     <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
 </p>
 
-<h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (arXiv 2024)</h1>
+<h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (USENIX Security 2024)</h1>
 
-This repository contains the evaluation artifacts of our [preprint](https://arxiv.org/pdf/2401.02880.pdf) paper titled 
-"Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning".
+This repository contains the evaluation artifacts of our paper titled 
+"Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning", which will be presented at USENIX Security'24 conference.
+You can find a preprint of the paper [here](https://arxiv.org/pdf/2401.02880.pdf).
 
 [Zhifeng Jiang](http://home.cse.ust.hk/~zjiangaj/), [Peng Ye](pyeac@cse.ust.hk), [Shiqi He](https://tctower.github.io/), 
 [Wei Wang](https://home.cse.ust.hk/~weiwa/), [Ruichuan Chen](https://www.ruichuan.org/), [Bo Li](https://www.cse.ust.hk/~bli)
@@ -372,6 +373,6 @@ If you find this repository useful, please consider giving ⭐ and citing our pa
   author={Jiang, Zhifeng and Ye, Peng and He, Shiqi and Wang, Wei and Ruichuan, Chen and Li, Bo},
   title={Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning},
   year={2024},
-  booktitle={arXiv:2401.02880},
+  booktitle={USENIX Security},
 }
 ```
