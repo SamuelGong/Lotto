@@ -14,7 +14,7 @@
 
 This repository contains the evaluation artifacts of our paper titled 
 "Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning", which will be presented at USENIX Security'24 conference.
-You can find a preprint of the paper [here](https://arxiv.org/pdf/2401.02880.pdf).
+You can find the paper [here](https://www.usenix.org/conference/usenixsecurity24/presentation/jiang-zhifeng).
 
 [Zhifeng Jiang](http://home.cse.ust.hk/~zjiangaj/), [Peng Ye](pyeac@cse.ust.hk), [Shiqi He](https://tctower.github.io/), 
 [Wei Wang](https://home.cse.ust.hk/~weiwa/), [Ruichuan Chen](https://www.ruichuan.org/), [Bo Li](https://www.cse.ust.hk/~bli)
