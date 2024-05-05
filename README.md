@@ -367,7 +367,7 @@ to obtain authorization.
 
 ## 8. Citation
 
-If you find this repository useful, please consider giving ⭐ and citing our paper (preprint available [here](https://arxiv.org/pdf/2401.02880.pdf)):
+If you find this repository useful, please consider giving ⭐ and citing our paper:
 
 ```bibtex
 @inproceedings{jiang2024secure,
