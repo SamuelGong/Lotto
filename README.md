@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://arxiv.org/abs/2401.02880"><img src="https://img.shields.io/badge/arxiv-2401.02880-silver" alt="Paper"></a>
-    <a href=""><img src="https://img.shields.io/badge/Pub-Security'24-olive" alt="Pub"></a>
+    <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/jiang-zhifeng"><img src="https://img.shields.io/badge/Pub-Security'24-olive" alt="Pub"></a>
     <a href="https://github.com/SamuelGong/Lotto"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
     <a href="https://github.com/SamuelGong/Lotto/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SamuelGong/Lotto?color=yellow" alt="License"></a>
     <img src="https://badges.toozhao.com/badges/01HE2YKN7CE242JHSFMTQ6JXE1/green.svg" />
