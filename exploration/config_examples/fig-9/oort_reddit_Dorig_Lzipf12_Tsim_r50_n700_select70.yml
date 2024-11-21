@@ -1,0 +1,97 @@
+clients:
+    type: base
+    total_clients: 700
+    num_physical_clients: 70
+    resource_saving: true
+    worst_online_frac: 1.0  # placeholder for using fixed_sample_size, no real use
+    sample:
+        type: oort
+        sample_size: 70
+        params:
+            blacklist_max_len: 0.3
+            blacklist_rounds: -1
+            clip_bound: 0.9
+            cut_off_util: 0.05
+            exploration_alpha: 0.3
+            exploration_decay: 0.98
+            exploration_factor: 0.9
+            exploration_min: 0.3
+            pacer_delta: 5
+            pacer_step: 20
+            round_penalty: 2.0
+            round_threshold: 30
+            sample_window: 5.0
+simulation:
+    type: simple
+    time:
+        print_virtual_time: true
+        type: zipf
+        a: 1.2
+        min: 20
+        max: 180
+        seed: 1
+server:
+    type: base
+    address: 127.0.0.1
+    port:
+        - 8000
+        - 8001
+        - 8002
+        - 8003
+        - 8004
+        - 8005
+        - 8006
+        - 8007
+        - 8008
+        - 8009
+        - 8010
+        - 8011
+        - 8012
+        - 8013
+        - 8014
+        - 8015
+    disable_clients: true
+    ping_interval: 1
+    ping_timeout: 86400
+    redis:
+        port: 6379
+
+scheduler:
+    type: base
+
+agg:
+    type: plaintext
+    threshold: 0.5
+
+app:
+    type: federated_learning
+    init_scale_threshold: 1.0
+    repeat: 50
+    debug:
+        client:
+            sketch_num: 3
+        server:
+            sketch_num: 3
+            test: true
+    data:
+        random_seed: 1
+        datasource: Reddit
+        sampler: all_inclusive
+        num_classes: 62
+        concurrent_download: True
+    trainer:
+        epochs: 2
+        batch_size: 20
+        type: basic
+        model_name: albert_base_v2
+        num_classes: 62
+        optimizer: AdamW
+        learning_rate: 8.0e-05
+        momentum: 0.9
+        weight_decay: 0.0
+
+results:
+    results_dir: ./
+    types: round_time
+    model_save_interval: 5
+    model_save_dir: ./pretrained_models/15_reddit_70_in_700/oort

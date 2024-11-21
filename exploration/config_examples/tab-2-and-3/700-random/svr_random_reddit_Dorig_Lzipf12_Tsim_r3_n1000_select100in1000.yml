@@ -1,0 +1,106 @@
+clients:
+    type: base
+    total_clients: 700
+    num_physical_clients: 700
+    worst_online_frac: 1.0
+#    resource_saving: true
+    sample:
+        type: uniform
+        mode: fixed_sample_size
+        sample_size: 70
+        seed: 1
+        security:
+            type: server_centric
+            min_accepted_population: 700
+            over_selection_factor: 2
+            randomness_simulator:
+                type: os_random
+            pki_simulator:
+                type: elliptic_curve  # follow key agreement
+            pseudorandom_function:
+                type: hmac_sha_256
+            signature:
+                type: ed25519
+        mock: true  # so that different approaches are comparable (after accounting for client heterogeneity)
+server:
+    type: base
+    address: 127.0.0.1
+    port:
+        - 8000
+        - 8001
+        - 8002
+        - 8003
+        - 8004
+        - 8005
+        - 8006
+        - 8007
+        - 8008
+        - 8009
+        - 8010
+        - 8011
+        - 8012
+        - 8013
+        - 8014
+        - 8015
+    disable_clients: true
+    ping_interval: 1
+    ping_timeout: 86400
+    redis:
+        port: 6379
+
+scheduler:
+    type: base
+
+agg:
+    type: secagg
+    threshold: 0.5
+    security:
+        bit_width: 20
+        key_agreement:
+            type: elliptic_curve
+        secret_sharing:
+            type: myshamir
+            threshold: 0.5
+        authenticated_encryption:
+            type: fernet
+        pseudorandom_generator:
+            type: os_random
+    quantize:
+        type: asymmetric
+        clipping_range:
+            - -3.0
+            - 3.0
+        bit_width: 20
+        batch:
+            type: best
+            total_bit_width: 60
+
+app:
+    type: federated_learning
+    init_scale_threshold: 1.0
+    repeat: 3
+    debug:
+        client:
+            sketch_num: 3
+        server:
+            sketch_num: 3
+            test: true
+    data:
+        random_seed: 1
+        datasource: Reddit
+        sampler: all_inclusive
+        num_classes: 62
+        concurrent_download: True
+    trainer:
+        epochs: 2
+        batch_size: 20
+        type: basic
+        model_name: albert_base_v2
+        optimizer: AdamW
+        learning_rate: 8.0e-05
+        momentum: 0.9
+        weight_decay: 0.0
+
+results:
+    results_dir: ./
+    types: round_time
