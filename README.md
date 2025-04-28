@@ -12,6 +12,8 @@
 
 <h1 align="center">Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning (USENIX Security 2024)</h1>
 
+> You can also explore the [DeepWiki](https://deepwiki.com/SamuelGong/Lotto) for this repository, which offers additional insights and helps with answering questions.
+
 This repository contains the evaluation artifacts of our paper titled 
 "Lotto: Secure Participant Selection against Adversarial Servers in Federated Learning", which will be presented at USENIX Security'24 conference.
 You can find the paper [here](https://www.usenix.org/conference/usenixsecurity24/presentation/jiang-zhifeng).
